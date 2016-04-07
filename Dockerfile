@@ -9,6 +9,7 @@ RUN yum install -y maxscale
 ADD maxscale.cnf /etc/
 ADD start.sh /
 RUN sed -i -e 's/\r$//' /start.sh
+RUN chmod +x start.sh
 EXPOSE 3306
 EXPOSE 3308
 EXPOSE 4442

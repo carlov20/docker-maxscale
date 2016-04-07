@@ -25,7 +25,7 @@ replace=select
 type=service
 router=readwritesplit
 servers=server1,server2,server3
-user=haproxy_root
+user=username
 passwd=password
 max_slave_connections=100%
 router_options=slave_selection_criteria=LEAST_CURRENT_OPERATIONS
@@ -35,7 +35,7 @@ type=service
 router=readconnroute
 router_options=synced
 servers=server1,server2,server3
-user=haproxy_root
+user=username
 passwd=password
  
 [Debug Interface]

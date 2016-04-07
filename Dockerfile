@@ -10,4 +10,7 @@ ADD maxscale.cnf /etc/
 ADD start.sh /
 RUN sed -i -e 's/\r$//' /start.sh
 EXPOSE 3306
+EXPOSE 3308
+EXPOSE 4442
+EXPOSE 6603
 CMD ["/start.sh"]
